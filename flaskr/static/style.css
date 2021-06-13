@@ -1,0 +1,182 @@
+html { 
+    font-family: Geogia;
+    background: #eee; 
+    padding: 1rem; 
+}
+
+body { 
+    max-width: 960px; 
+    margin: 0 auto; 
+    background: white; 
+}
+
+h1 
+{ 
+    font-family: Geogia;
+    margin: 1rem 0;
+}
+
+a {
+    color: black; 
+}
+
+hr { 
+    border: none; 
+    border-top: 1px solid lightgray; 
+}
+
+nav { 
+    background: white; 
+    display: flex; 
+    align-items: center; 
+    padding: 1rem 0.5rem;
+}
+
+.navi{
+    margin: 1em 0 2em 23em;
+}
+
+nav h1 {
+    font-size: 30px;
+    flex: auto;
+    margin: 0;
+    color: white;
+    border: 1em;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 30px;
+    width: 8em;
+    height: 2em;
+    padding-top: 0.4em;
+}
+
+ul {
+    margin: 2em 0 2em 12em;
+}
+
+ul li a {
+    margin: 0 0 1.9rem 0.75rem;
+    padding: 0.2rem 0.3rem 0rem 0.3rem;
+    border: 1em;
+    text-align: center;
+}
+
+ul li { 
+    display: block; 
+    list-style: none; 
+    padding: 0; 
+
+}
+
+header .action1 {
+    display: block; 
+    margin: 0 0 1em 0.75rem;
+    padding: 0.2rem 0.3rem 0.3rem 0.3rem;
+    align-items: flex-start;
+    border: 1em;
+    text-align: center;
+    background-color: skyblue;
+    color:white
+}
+
+ul{
+    display: block; 
+    align-items: flex-end;
+}
+
+header .action2 {
+    display: block; 
+    margin: 0 0 0.7rem 0.75rem;
+    padding: 0.2rem 0.3rem 0.3rem 0.3rem;
+    align-items: flex-end;
+    border: 1em;
+    text-align: center;
+    background-color: skyblue;
+    color: white
+}
+
+.content { 
+    margin-top: 3em;
+    padding: 0 1rem 1rem;
+}
+
+input[type=submit]{
+    display: block;
+    margin: 0 0 0.7rem 0.75rem;
+    padding: 0.2rem 0.3rem 0.3rem 0.3rem;
+    text-align: center;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    font-size: medium;
+
+}
+
+.content > header { 
+    border-bottom: 1px solid lightgray; 
+    display: flex; 
+    align-items: flex-end; 
+}
+
+.content > header h1 { 
+    margin: 0 0 0.75em 0; 
+}
+
+.flash { 
+    margin: 1em 0; 
+    padding: 1em; 
+    background: #cae6f6; 
+    border: 1px solid #377ba8; 
+}
+
+.post > header { 
+    display: flex; 
+    align-items: flex-end; 
+    font-size: 0.85em; 
+}
+
+.post > header > div:first-of-type { 
+    flex: auto; }
+
+.post > header h1 { 
+    font-size: 1.5em; margin-bottom: 0; 
+}
+.post .about { 
+    margin-top: 0.3em;
+    color: slategray; 
+}
+
+.post .body { 
+    white-space: pre-line; 
+}
+
+.content:last-child { 
+    margin-bottom: 0; 
+}
+.content form { 
+    margin: 1em 0; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.content label { 
+    font-weight: bold; 
+    margin-bottom: 0.5em; 
+}
+
+.content input, .content textarea { 
+    margin-bottom: 1em;
+    font-family: Geogia; 
+
+}
+
+.content textarea { 
+    min-height: 12em; 
+    resize: vertical; 
+}
+
+input[type=submit] { 
+    align-self: center; 
+    min-width: 10em; 
+    min-height: 2em; 
+}

@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block header %}
+  <h1>{% block title %}Sign Up{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="username">ID</label>
+    <input name="username" id="username">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="Sign Up">
+  </form>
+{% endblock %}

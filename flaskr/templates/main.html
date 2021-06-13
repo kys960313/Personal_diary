@@ -1,0 +1,27 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} MY DIARY - Personal Diary</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+<div class="navi">
+  <h1 style="text-align:center">MY DIARY</h1>
+    </div>
+
+<ul style = "list-style : none" "text-align:right">
+    {% if g.user %}
+      <li style="text-align: right"><span>User : {{ g.user['username'] }}</span>
+      <li style="text-align: right"><a href="{{ url_for('auth.sign_out') }}">Sign Out</a> <!-- 해당 경로를 갖는 함수로 이동-->
+    {% else %}
+      <li style="text-align: right"><a href="{{ url_for('auth.sign_up') }}">Sign Up</a>
+      <li style="text-align: right"><a href="{{ url_for('auth.sign_in') }}">Sign In</a>
+    {% endif %}
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %} <!-- header 이름으로 정의된 block 영역 오버라이딩-->
+  </header>
+  {% for message in get_flashed_messages() %} <!-- auth.py에서 flash된 오류메시지 get-->
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
